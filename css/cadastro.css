@@ -1,0 +1,904 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CodecPro';
+    src: url('fonts/CodecPro-Regular.woff2') format('woff2'),
+         url('fonts/CodecPro-Regular.woff') format('woff'),
+         url('fonts/CodecPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Estilo responsivo para mobile*/
+
+.header {
+    font-family: 'CodecPro';
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: -45px;
+    padding: 5px;
+}
+
+.ponce img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 400px;  
+    left: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul {
+    display: block;
+    margin-right: 100px;
+}
+
+.menu ul label {
+    font-family: 'CodecPro';
+    width: 120px;
+    font-size: 12pt;
+    position: absolute;
+    top: 18px;
+    left: 410px;
+}
+
+.menu ul select {
+    font-family: 'CodecPro';
+    width: 110px;
+    height: 37px;
+    position: relative;
+    top: 30px;
+    right: 20px;
+    border-radius: 15px;
+    width: 8.5em;
+    cursor: pointer;
+}
+
+.menu ul select:hover {
+    filter: drop-shadow(1px 3px 10px #eb8532a2);
+}
+
+#linha1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    border: 1px solid #cccccc41;
+}
+
+body {
+    font-family: 'CodecPro';
+    text-align: left;
+    padding: 5px;
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'CodecPro';
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.texto {
+    font-family: 'COdecPro';
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Estilo do formulário */
+.form-container {
+    font-family: 'CodecPro';
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 3px #cccccc41;
+    border-radius: 20px;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    max-width: 95%;
+    height: 88em;
+    padding: 15px ;
+}
+
+.container {
+    margin-left: 0.5em;
+}
+
+.container img {
+    position: relative;
+    width: 150px;
+    left: 160px;
+    filter: drop-shadow(0px 10px 0px #eb8532a2);
+}
+
+.container h5 {
+    font-family: 'CodecPro';
+    font-size: 18pt;
+    position: relative;
+    left: 6.5em;
+    top: -2em;
+}
+
+.nome label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'CodecPro';
+    position: relative;
+    font-size: 14pt;
+    left: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EB8432;
+}
+
+.nome input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 20px;
+    background-color: #cccccc41;
+    font-size: 12pt;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sobrenome label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'CodecPro';
+    position: relative;
+    font-size: 14pt;
+    left: 32px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EB8432;
+}
+
+.sobrenome input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #cccccc41;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 20px;
+    background-color: none;
+    font-size: 12pt;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.telefone label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'CodecPro';
+    position: relative;
+    font-size: 14pt;
+    left: 32px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EB8432;
+}
+
+.telefone input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    background-color: #cccccc41;
+    margin-left: auto;
+    margin-right: auto;
+    top: -18px;
+    width: 400px;
+    height: 20px;
+    background-color: none;
+    font-size: 12pt;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.email label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'CodecPro';
+    position: relative;
+    font-size: 14pt;
+    left: 32px;
+    margin-top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EB8432;
+}
+
+.email input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    background-color: #cccccc41;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: 400px;
+    height: 20px;
+    background-color: none;
+    font-size: 12pt;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.senha label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'CodecPro';
+    position: relative;
+    font-size: 14pt;
+    left: 32px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EB8432;
+}
+
+.senha input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    background-color: #cccccc41;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: 400px;
+    height: 20px;
+    background-color: none;
+    font-size: 12pt;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#togglePassword {
+    position: relative;
+    left: 410px;
+    top: -22px;
+    cursor: pointer;
+}
+
+#cadastro-button {
+    position: relative;
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    left: 150px;
+    margin-top: 15px;
+    background-color: #EB8432;
+}
+
+#cadastro-button a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'CodecPro';
+    font-size: 14pt;
+}
+
+#cadastro-button:hover {
+    background-color: #eb8532a2;
+    box-shadow: 1px 1px 4px 8px #eb8532a2;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+
+#botao-voltar {
+    position: relative;
+    top: 20px;
+    width: 40px;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+#botao-voltar:hover {
+    box-shadow: 0px 0px 2px 5px #eb8532a2;
+}
+
+#linha2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px;
+    border: 1px solid #cccccc41;
+}
+
+/* Estilos para o rodapé */
+
+.footer-content {
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+
+.footer-section1 h3 {
+    position: relative;
+    font-size: 15pt;
+    font-family: 'CodecPro';
+    font-weight: bold;
+    top: 100px;
+    right: 160px;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    right: 160px;
+    top: 55px;        
+}
+
+.footer-section2 h3 {
+    font-size: 15pt;
+    font-family: 'CodecPro';
+    position: relative;
+    font-weight: bold;
+    top: -85px;
+    left: 150px;
+}
+
+.footer-section2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section2 ul li {
+    position: relative;
+    font-size: 15pt;
+    top: -80px;
+    left: 150px;
+}
+
+.footer-section2 ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.footer-section2 ul li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #eb8532a2;
+    box-shadow: 0px 0px 8px 8px #eb8532a2;
+    border: 1px solid #EB8432;
+    transition: 0.6s;
+}
+
+.footer-section3 h3 {
+    font-size: 15pt;
+    text-align: center;
+    position: relative;
+    font-family: 'CodecPro';
+    font-weight: normal;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    top: -50px;
+}
+
+.footer-section3-div0 img {
+    position: relative;
+    width: 22px;
+    top: -60px;
+    right: 110px;
+}
+
+.footer-section3-div0 h4 {
+    font-family: 'CodecPro';
+    color: #333;
+    position: relative;
+    text-align: center;
+    top: -104px;
+}
+
+.footer-section3-div1 img {
+    width: 20px;
+    right: 112px;
+    position: relative;
+    top: -110px;
+}
+
+.footer-section3-div1 h5 {
+    font-family: 'CodecPro';
+    color: #333;
+    position: relative;
+    text-align: center;
+    top: -152px;
+    right: 52px;
+}
+
+#linha5 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -100px;
+    right: 0px;
+    width: 100%;
+    border: 1px solid #cccccc41;
+
+}
+
+.cnpj {
+    font-family: 'CodecPro';
+    left: 8px;
+    position: relative;
+    top: -90px;
+    font-size: 13pt;
+}
+
+@media (min-width: 768px) {
+    /* estilo para cabeçalho*/
+    .header {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ponce {
+        position: relative;
+        width: 350px;
+        right: 130px;
+        margin-top: -20px; 
+    }
+
+    .menu ul {
+        list-style: none;
+    }
+    
+    .menu ul label {
+        font-family: 'CodecPro';
+        position: relative;
+        width: 129px;
+        top: 98px;
+        left: 218px;
+    }
+
+    .menu ul select {
+        font-family: 'CodecPro';
+        width: 137px;
+        position: relative;
+        top: 125px;
+        height: 35px;
+        left: 100px;
+        border-radius: 10px;
+    }
+
+    #texto {
+        font-family: 'Codecpro', sans-serif;
+        width: 440px;
+        margin-top: 0px;
+    }
+
+    body {
+        font-family: 'Codecpro', sans-serif;
+        text-align: left;
+        padding: 20px 20px 20px;
+        overflow-x: hidden;
+        margin-left:  auto;
+        margin-right: auto;
+        max-width: 70%;
+    }
+
+    .linha1 {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width:  100%;
+        border: 1px solid #ccc;
+    }
+    /* fim do estilo cabeçalho*/
+    /* início do corpo*/
+        /* Estilo do formulário */
+    .form-container {
+        font-family: 'CodecPro';
+        background-color: #fff;
+        box-shadow: 0px 0px 2px 3px #cccccc41;
+        border-radius: 20px;
+        margin-left: 0.5em;
+        margin-right: 1em;
+        max-width: 95%;
+        height: 80em;
+        padding: 15px ;
+    }
+
+    .container {
+        margin-left: 0.5em;
+    }
+
+    .container img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 200px;
+        left: 380px;
+        filter: drop-shadow(0px 10px 0px #eb8532a2);
+    }
+
+    .container h5 {
+        font-family: 'CodecPro';
+        font-size: 18pt;
+        position: relative;
+        left: 16em;
+        top: -2em;
+    }
+
+    .nome label {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'CodecPro';
+        position: relative;
+        font-size: 14pt;
+        left: 290px;
+        color: #EB8432;
+    }
+
+    .nome input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 20px;
+        background-color: #cccccc41;
+        font-size: 12pt;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .sobrenome label {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'CodecPro';
+        position: relative;
+        font-size: 14pt;
+        left: 290px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #EB8432;
+    }
+
+    .sobrenome input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #cccccc41;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 20px;
+        background-color: none;
+        font-size: 12pt;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .telefone label {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'CodecPro';
+        position: relative;
+        font-size: 14pt;
+        left: 290px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #EB8432;
+    }
+
+    .telefone input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 5px;
+        border-bottom: 2px solid #ccc;
+        background-color: #cccccc41;
+        margin-left: auto;
+        margin-right: auto;
+        top: -18px;
+        width: 400px;
+        height: 20px;
+        background-color: none;
+        font-size: 12pt;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .email label {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'CodecPro';
+        position: relative;
+        font-size: 14pt;
+        left: 290px;
+        margin-top: -2px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #EB8432;
+    }
+
+    .email input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 5px;
+        border-bottom: 2px solid #ccc;
+        background-color: #cccccc41;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0px;
+        width: 400px;
+        height: 20px;
+        background-color: none;
+        font-size: 12pt;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .senha label {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'CodecPro';
+        position: relative;
+        font-size: 14pt;
+        left: 290px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #EB8432;
+    }
+
+    .senha input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 5px;
+        border-bottom: 2px solid #ccc;
+        background-color: #cccccc41;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0px;
+        width: 400px;
+        height: 20px;
+        background-color: none;
+        font-size: 12pt;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    #togglePassword {
+        position: relative;
+        left: 660px;
+        top: -22px;
+        cursor: pointer;
+    }
+
+    #cadastro-button {
+        position: relative;
+        width: 180px;
+        height: 35px;
+        border-radius: 15px;
+        left: 400px;
+        margin-top: 15px;
+        background-color: #EB8432;
+    }
+
+    #cadastro-button a {
+        color: #000000;
+        text-decoration: none;
+        font-family: 'CodecPro';
+        font-size: 14pt;
+    }
+
+    #cadastro-button:hover {
+        background-color: #eb8532a2;
+        box-shadow: 1px 1px 4px 8px #eb8532a2;
+        transition-duration: 0.6s;
+        cursor: pointer;
+    }
+
+    #botao-voltar {
+        position: relative;
+        top: 20px;
+        width: 40px;
+        border-radius: 20px;
+        transition: 0.6s;
+    }
+
+    #botao-voltar:hover {
+        box-shadow: 0px 0px 2px 5px #eb8532a2;
+    }
+
+    #linha2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50px;
+        border: 1px solid #cccccc41;
+    }
+
+     /* Estilos para o rodapé inicio*/
+
+     .footer-content {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        top: 25px;
+    }
+
+    .footer-section1 h3 {
+        position: relative;
+        font-family: 'CodecPro';
+        font-size: 14pt;
+        top: 30px;
+        right: 30px;
+        font-weight: bold;
+    }
+
+    .logo {
+        width: 200px;
+        height: 120px;
+        right: 250px;
+        top: 70px;    
+    }
+
+    .footer-section2 h3 {
+        position: relative;
+        font-size: 14pt;
+        top: 30px;
+        font-family: 'CodecPro';
+        font-weight: bold;
+        left: -120px;
+    }
+
+    .footer-section2 ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .footer-section2 ul li {
+        position: relative;
+        font-size: 14pt;
+        top: 50px;
+        left: -120px;
+    }
+
+    .footer-section2 ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 5px;
+        border-radius: 10px;
+    }
+
+    .footer-section2 ul li a:hover {
+        text-decoration: none;
+        color: #000000;
+        box-shadow: 0px 0px 8px 8px #eb8532a2;
+        transition: 0.6s;
+    }
+
+    .footer-section3 h3 {
+        position: relative;
+        font-size: 15pt;
+        top: 25px;
+        left: 0px;
+        font-family: 'CodecPro';
+        font-weight: normal;
+        font-weight: bold;
+    }
+
+    .footer-section3-div0 img {
+        width: 22px;
+        top: 30px;
+        right: 120px;
+    }
+
+    .footer-section3-div0 h4 {
+        font-family: 'CodecPro';
+        position: relative;
+        top: -13px;
+        right: 5px;
+    }
+
+    .footer-section3-div1 img {
+        position: relative;
+        width: 20px;
+        top: -18px;
+        right: 122px;
+    }
+
+    .footer-section3-div1 h5 {
+        font-family: 'CodecPro';
+        position: relative;
+        top: -60px;
+        right: 58px;
+    }
+
+    #linha5 {
+        position: relative;
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% ;
+        border: 1px solid #cccccc41;
+    }
+
+    .cnpj {
+        font-family: 'CodecPro';
+        position: relative;
+        font-size: 13pt;
+        margin-left: auto;
+        margin-right: auto;
+        left: 5px;
+        top: 10px;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="shortcut icon" href="imagens/isafeparking.ico" type="image/x-icon">
+    <title>Isafeparking.PoncePark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> 
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <div class="ponce">
+                <a href="https://www.poncepark.com.br/"><img src="imagens/poncepark.png" alt="ponce-celular"></a>
+            </div>
+            <div class="menu">
+                <ul>    
+                    <label id="idioma" for="language-select">Escolha o idioma</label>
+                    <select id="languageSelector" onchange="changeLanguage()">
+                        <option value="pt-br">PT-BR (Português)</option>
+                        <option value="en">EN (Usa)</option>
+                        <option value="es">ES (Espanhol)</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+
+        <!-- linha 1 -->
+        <hr id="linha1">
+        
+        <form class="container">
+            <div class="login">
+                <img src="imagens/IMG_3138.PNG" alt="user"><br>
+                <h5 id="title">Informações de Pagamento</h5>
+            </div>
+            <div class="pix">
+                <label for="pix" id="pix">Insira seus dados de pagamento</label>
+            </div>
+            <div id="qrcode">
+                <button id="copiar-codigo-pix">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C256.1 224.4 247.9 224.5 242.4 218.9L165.7 142.2C151.5 127.1 132.6 120.2 112.6 120.2H103.3L200.7 22.8C231.1-7.6 280.3-7.6 310.6 22.8L407.8 119.9H392.6C372.6 119.9 353.7 127.7 339.5 141.9L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 252.5 245.6C261.9 245.6 271.3 241.1 278.5 234.8L355.5 157.8C365.3 148.1 378.8 142.5 392.6 142.5H430.3L488.6 200.8C518.9 231.1 518.9 280.3 488.6 310.6L430.3 368.9H392.6C378.8 368.9 365.3 363.3 355.5 353.5L278.5 276.5C264.6 262.6 240.3 262.6 226.4 276.6L149.7 353.2C139.1 363 126.4 368.6 112.6 368.6H80.8L22.8 310.6C-7.6 280.3-7.6 231.1 22.8 200.8L80.8 142.7H112.6z"/></svg>
+                    <label for="Pix">Pix</label>
+                </button>
+            </div>
+            <div class="img-cartao">
+                <button id="cartao-credito-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z"/></svg>
+                    <label for="Cartão">Cartão de Crédito</label>
+                </button>    
+            </div>
+        </form>
+        
+        <!-- Adicione um formulário para preencher as informações do cartão -->
+        <form id="cartao-credito-form">
+            <label for="nome-cartao">Nome*</label>
+            <input type="text" id="titular" name="nome-cartao" placeholder="Digite o nome do titular" required><br><br>
+            <label for="numero-cartao">Número do cartão*</label>
+            <input type="text" id="numero-cartao" name="numero-cartao" placeholder="Digite o numero do cartao" required><br><br>
+            <label for="validade-cartao">Validade do cartão*</label>
+            <input type="text" id="validade-cartao" name="validade-cartao" placeholder="Digite a validade do cartao" required><br><br>
+            <label for="codigo-cartao">Código de segurança*</label>
+            <input type="text" id="codigo-cartao" name="codigo-cartao" placeholder="Digite o codigo do cartao" required><br><br>
+            <button id="cartao-credito-btn-fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+            </button>
+            <button id="cartao-credito-btn-enviar">Enviar</button>
+        </form>
+
+        <!-- formulario do index -->
+        <form class="info-container">
+            <div>
+                <h2 id="seg-info-title">Segue suas informações</h2>
+            </div>
+            <div class="info-container-form-entrada">
+                <span id="dados-entrada-label">Dados Entrada</span><br><span id="data-entrada-info"></span>&nbsp;&nbsp;&nbsp;<span id="hora-entrada-info"></span>
+            </div>
+            <div class="info-container-form-saida">
+                <span id="dados-saida-label">Dados Saída</span><br><span id="data-saida-info"></span>&nbsp;&nbsp;&nbsp;<span id="hora-saida-info"></span>
+            </div>
+            <div class="info-container-tipo-vaga">
+                <span id="tipo-vaga-info">Tipo Vaga</span><br><span id="tipoCoberto"></span>
+                <span id="tipoDescoberto"></span>
+            </div>
+            
+            <div class="info-container-periodo">
+                <span id="periodo-label">Período</span><br><span id="periodo"></span>
+            </div>
+
+            <div class="info-container-veiculo">
+                <span id="veiculo-info">Veículo</span><br><span id="veiculo"></span>
+            </div>
+            <div class="info-container-placa">
+                <span id="placa-info">Placa</span><br><span id="placa"></span>
+            </div>
+            <div class="info-container-valor-diaria">
+                <span id="valor-diaria-label">Valor da Diária</span><br><span id="valorReserva"></span>
+            </div>
+            <div class="info-container-total">
+                <span id="total-label">Total</span><br><span id="valorTotal"></span>
+            </div>
+        </form>
+        <div>
+            <a href="veiculos.html"><img src="imagens/botao-voltar.jpeg" alt="voltar" id="botao-voltar"></a>
+        </div>
+        <div id="vehicle-info"></div>
+        <script src="js/payment-localstorage.js"></script>
+        <script src="js/payment-localstorage-2.js"></script>
+        <footer>
+            <hr id="linha2">
+        <!-- inicio do rodape -->
+        <div class="footer-content">
+            <div class="footer-section1">
+                <h3 id="desenvolvido-label">Desenvolvido Por</h3>
+            </div>
+            <img src="imagens/isafepark.png" alt="Logo distribuído" class="logo">
+            <div class="footer-section2">
+                <h3 id="links-úteis-label">Links ÚTeis</h3>
+                <ul>
+                    <li><a href="link-para-politica-de-privacidade" id="politica-privacidade-label">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-section3">
+                <h3 id="canais-atendimento-label">Canais de Atendimento</h3>
+                <div class="footer-section3-div0">
+                    <img src="imagens/envelope1.png" alt="">
+                    <h4>contato@poncepark.com.br</h4>
+                </div>
+                <div class="footer-section3-div1">
+                    <img src="imagens/telefone.png" alt="telefone">
+                    <h5>(11)94804-2366</h5>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <script src="js/mostrar-senha.js"></script>
+        <!-- fim do rodapé -->
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <script src="js/cartaodecredito.js"></script>
+
+        <!-- linha 5 -->
+        <hr id="linha5">
+        <div class="cnpj">
+            PoncePark / CNPJ:44.614.669/0001-49
+        </div>
+    </div>
+</body>
+</html>

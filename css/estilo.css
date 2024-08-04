@@ -1,0 +1,456 @@
+/* General Styles */
+body {
+    font-family: 'CodecPro';
+    padding: 5px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.ponce img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+/* Menu */
+.menu ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul label {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 12pt;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul select {
+    font-family: 'CodecPro';
+    display: block;
+    width: 100%;
+    max-width: 140px;
+    margin-left: 165px;
+    height: 37px;
+    font-size: 12pt;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu ul select:hover {
+    background-color: #f1b88ab7;
+    box-shadow: 0 0 0 3px white, 0 0 0 8px #eb8532a2;
+    transition: 0.7s;
+}
+
+/* Lines */
+#linha1,
+#linha2 {
+    margin: 10px auto;
+    width: 100%;
+    border: 1px solid #cccccc41;
+}
+
+.info-container {
+    display: block;
+    margin: 50px auto;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 4px #eb8532a2;
+}
+
+.info-container h2 {
+    font-family: 'CodecPro';
+    text-align: center;
+    font-size: 28px;
+}
+
+.info-container-informacao,
+.info-container-form-entrada,
+.info-container-form-saida,
+.info-container-tipo-vaga {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+.info-container-periodo {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+.info-container-valor-diaria {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+.info-container-total {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* Button */
+#avancar-button {
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #EB8432;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#avancar-button a {
+    color: black;
+    text-decoration: none;
+}
+
+#avancar-button:hover {
+    background-color: #eb8532a2;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #eb8532a2;
+}
+
+#mensagemEstadiaLonga {
+    display: none;
+    color: red;
+    margin-top: 15px;
+    width: 90%;
+    margin-left: 30px;
+    text-align: center;
+    max-width: 400px;
+}
+
+#mensagemEstadiaLonga img {
+    position: relative;
+    width: 28px;
+    margin-top: 0px;
+    top: 7px;
+}
+
+#mensagem-estadia-curta {
+    display: none;
+}
+
+/* Text */
+.texto {
+    font-family: 'CodecPro';
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* Form Container */
+.form-container {
+    font-family: 'CodecPro';
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Form Rows */
+.form-row-entrada,
+.form-row-saida,
+.form-row-tipo,
+.nome-sobrenome,
+.email,
+.whatsapp {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+}
+
+.form h2 {
+    font-family: 'CodecPro';
+    font-size: 20pt;
+    text-align: center;
+}
+
+.form-group-entrada label {
+    display: block;
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    margin: 10px auto;
+}
+
+.form-group-entrada input {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 12pt;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    background-color: none;
+}
+
+.form-group-hora-entrada label {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 15pt;
+    margin: 10px auto;
+}
+
+.form-group-hora-entrada select {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 12pt;
+    width: 100%;
+    border-radius: 4px;
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    background-color: none;
+}
+
+.form-group-saida label {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 15pt;
+    margin: 10px auto;
+}
+
+.form-group-saida input {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 12pt;
+    width: 100%;
+    border-radius: 4px;
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    background-color: none;
+}
+
+.form-group-hora-saida label {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 15pt;
+    margin: 10px auto;
+}
+
+.form-group-hora-saida select {
+    font-family: 'CodecPro';
+    display: block;
+    font-size: 12pt;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    background-color: none;
+}
+
+/* Buttons */
+button {
+    background-color: #EB8432;
+    color: black;
+    font-size: 13pt;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 45%;
+    transition: background-color 0.7s;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #eb8532a2;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #eb8532a2;
+    transition: 0.7s;
+}
+
+#importante {
+    box-shadow: 0px 0px 10px 4px #eb8532a2;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#importante:hover {
+    background-color: #EB8432;
+    box-shadow:  0 0 0 4px #fff, 0 0 0 9px #eb8532a2;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#importante img {
+    display: inline-flex;
+    width: 100%;
+    max-width: 35px;
+    margin-top: 20px;
+    margin-left: 160px; 
+}
+
+#importante h4 {
+    display: inline-flex;
+    font-size: 16pt;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+#importante span {
+    font-family: 'CodecPro';
+    font-size: 12pt;
+}
+
+/* Footer */
+.footer-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section1,
+.footer-section2,
+.footer-section3 {
+    margin: 10px 0;
+}
+
+.footer-section1 h3 {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.footer-section2 h3 {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+}
+
+.footer-section3 h3 {
+    font-family: 'CodecPro';
+    font-size: 15pt;
+    margin-top: 80px;
+}
+
+.footer-section2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section2 ul li {
+    font-size: 12pt;
+    margin: 5px 0;
+}
+
+.footer-section2 ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.footer-section2 ul li a:hover {
+    color: #000;
+    background-color: #eb8532a2;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #eb8532a2;
+    border: 1px solid #EB8432;
+    transition: 0.6s;
+}
+
+.footer-section3-div0 img {
+    width: 100%;
+    max-width: 35px;
+    height: 35px;
+    margin: 10px 0;
+    margin: 0;
+}
+
+.footer-section3-div0 h4 {
+    font-family: 'CodecPro';
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.footer-section3-div1 img {
+    width: 100%;
+    max-width: 35px;
+    height: 35px;
+    margin: 10px 0;
+    margin: 0px;
+}
+
+.footer-section3-div1 h5 {
+    font-family: 'CodecPro';
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Lines */
+#linha5 {
+    margin: 10px auto;
+    width: 100%;
+    border: 1px solid #cccccc41;
+}
+
+.cnpj {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14pt;
+}

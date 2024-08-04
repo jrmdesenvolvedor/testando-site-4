@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/veiculos.css">
+    <link rel="shortcut icon" href="imagens/isafeparking.ico" type="image/x-icon">
+    <title>Isafeparking.PoncePark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <div class="ponce">
+                <a href="https://www.poncepark.com.br/"><img src="imagens/poncepark.png" alt="ponce-celular"></a>
+            </div>
+            <div class="menu">
+                <ul>    
+                    <label id="idioma" for="language-select">Escolha o idioma</label>
+                    <select id="languageSelector" onchange="changeLanguage()">
+                        <option value="pt-br">PT-BR (Português)</option>
+                        <option value="en">EN (Usa)</option>
+                        <option value="es">ES (Espanhol)</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+        <hr id="linha1">
+        <form class="container">
+            <div class="login">
+                <img src="imagens/IMG_3138.PNG" alt="user"><br>
+                <h5 id="title">Cadastre seu Veículo</h5>
+            </div>
+
+            <div class="licensePlate">
+                <label for="licensePlate" id="licensePlate-label">Placa</label>
+                <input type="text" id="licensePlate" name="licensePlate" placeholder="ABC-1234" pattern="[A-Z]{3}-[0-9]{4}" required>
+            </div>
+
+            <div class="brand">
+                <label for="brand" id="brand-label">Marcas</label>
+                <select id="brand" name="brand" onchange="updateModels()" required>
+                    <option value="">Selecione uma marca</option>
+                </select>
+            </div>
+
+            <div class="model">
+                <label for="model" id="model-label">Modelo</label>
+                <select id="model" name="model" required>
+                    <option value="">Selecione um modelo</option>
+                </select>
+            </div>
+
+            <div class="color">
+                <label for="color" id="color-label">Cor</label>
+                <select id="color" name="color" required>
+                    <option value="">Selecione uma cor</option>
+                </select>
+            </div>
+
+            
+            <div class="cadastro-button">
+                <button id="vehicle-button" onclick="storeVehicleInfo()">
+                    <a href="payment.html" target="_self">Prosseguir</a>
+                </button>
+            </div>
+        </form>
+        <div>
+            <a href="cadastro.html"><img src="imagens/botao-voltar.jpeg" alt="voltar" id="botao-voltar" title="voltar"></a>
+        </div>
+        <script src="js/veiculos.js"></script>
+        <!-- começo do rodapé -->  
+        <hr id="linha2">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section1">
+                    <h3 id="desenvolvido-label">Desenvolvido Por</h3>
+                </div>
+                <img src="imagens/isafepark.png" alt="Logo distribuído" class="logo">
+                <div class="footer-section2">
+                    <h3 id="links-úteis-label">Links ÚTeis</h3>
+                    <ul>
+                        <li><a href="link-para-politica-de-privacidade" id="politica-privacidade-label">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section3">
+                    <h3 id="canais-atendimento-label">Canais de Atendimento</h3>
+                    <div class="footer-section3-div0">
+                        <img src="imagens/envelope1.png" alt="">
+                        <h4>contato@poncepark.com.br</h4>
+                    </div>
+                    <div class="footer-section3-div1">
+                        <img src="imagens/telefone.png" alt="telefone">
+                        <h5>(11)94804-2366</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/veiculos-localstorage.js"></script>
+        <!-- fim do rodapé -->
+
+        <hr id="linha5">
+
+        <div class="cnpj">
+            PoncePark / CNPJ:44.614.669/0001-49
+        </div>
+    </div>
+</body>
+</html>

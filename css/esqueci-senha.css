@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 15px;
+        margin: -45px;
+        padding: 5px;
+    }
+
+    .ponce img {
+        width: 250px;
+        margin-top: 0px;
+        margin-left: 90px;  
+    }
+
+    .menu ul {
+        display: block;
+        margin-right: 130px;
+    }
+    
+    .menu ul label {
+        font-family: 'CodecPro';
+        width: 127px;
+        position: absolute;
+        top: 55px;
+        left: 1060px;
+    }
+
+    .menu ul select {
+        font-family: 'CodecPro',sans-serif;
+        width: 137px;
+        position: relative;
+        top: 45px;
+        height: 25px;
+    }
+
+    #texto {
+        font-family: 'Codecpro', sans-serif;
+        width: 440px;
+        margin-top: 0px;
+    }
+
+    body {
+        font-family: 'Codecpro', sans-serif;
+        text-align: left;
+        padding: 20px 20px 20px;
+        overflow-x: hidden;
+    }
+
+    .form-container {
+        padding: 30px;
+        margin: 5px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .linha1 {
+        margin-top: 15px;
+        margin-left: 50px;
+        width: 1130px;
+        border: 1px solid #ccc;
+    }
+
+    /* fim do estilo cabeçalho*/
+
+    /* estilo começo do formulario*/
+    .form {
+        font-family: 'Codecpro', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+        height: 570px;
+    }
+
+    .form img {
+        position: relative;
+        width: 50px;
+        left: 600px;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .form h2 {
+        font-family: 'CodecPro';
+        font-size: 25px;
+        width: 240px;
+        margin-left: 590px;
+        margin-top: 35px;
+    }
+
+    .email {
+        font-family: 'CodecPro';
+        position:absolute;
+        font-size: 18px;
+        width: 150px;
+        margin-top: 180px;
+        margin-left: 420px;
+        color: #EB8432;
+    }
+
+    .email input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+        width: 400px;
+        height: 20px;
+        margin-top: 5px;
+        background-color: none;
+    }
+
+    .Enviar {
+        position: absolute;
+        margin-left: 580px;
+        margin-top: 260px;
+    }
+
+    .Enviar input {
+        border-radius: 10px;
+        width: 150px;
+        height: 35px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        background-color: #EB8432;
+        font-weight: 600;
+    }
+
+    .Enviar input:hover {
+        text-decoration: underline;
+        background-color: #eb8532a2;
+    }
+
+    #linha2 {
+        border: 1px solid #ccc; 
+        width: 1130px;
+        margin-left: 90px;
+        margin-top: -200px;
+    }
+
+    /* inicio do rodapé */
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+        margin-bottom: -100px;
+    }
+
+    .footer-section1 {
+        margin-top: -10px;
+    }
+
+    .footer-section1 h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-family: 'CodecPro';
+        font-weight: bold;
+        margin-left: 0px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 120px;
+        margin-left: -390px;
+        margin-top: 8px;        
+    }
+
+    .footer-section2 h3 {
+        font-size: 15px;
+        margin-top: 5px;
+        font-family: 'CodecPro';
+        font-weight: bold;
+        margin-left: 0px;
+    }
+
+    .footer-section2 ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .footer-section2 ul li {
+        font-size: 18px;
+        margin-bottom: 5px;
+        margin-top: 35px;
+    }
+
+    .footer-section2 ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .footer-section2 ul li a:hover {
+        text-decoration: underline;
+        color: #EB8432;
+    }
+
+    .footer-section3 h3 {
+        font-size: 15px;
+        margin-top: 3px;
+        font-family: 'CodecPro';
+        font-weight: normal;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+
+    .footer-section3-div0 img {
+        width: 22px;
+        margin-top: 18px;
+    }
+
+    .footer-section3-div0 h4 {
+        font-family: 'CodecPro';
+        color: #333;
+        position: relative;
+        top: -45px;
+        left: 25px;
+    }
+
+    .footer-section3-div1 img {
+        width: 20px;
+        top: -50px;
+        position: relative;
+    }
+
+    .footer-section3-div1 h5 {
+        font-family: 'CodecPro';
+        color: #333;
+        position: relative;
+        top: -92px;
+        left: 25px;
+    }
+
+    .linha5 {
+        margin-top: 0px;
+        margin-left: 90px;
+        width: 1130px;
+        border: 1px solid #ccc;
+    }
+
+    .cnpj {
+        font-family: 'CodecPro';
+        margin-left: 90px;
+    }
+}

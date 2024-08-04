@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/esqueci-senha.css">
+    <link rel="shortcut icon" href="imagens/isafeparking.ico" type="image/x-icon">
+    <title>Isafeparking.PoncePark</title>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <div class="ponce">
+                <a href="https://www.poncepark.com.br/"><img src="imagens/poncepark.png" alt="ponce-celular"></a>
+            </div>
+            <div class="menu">
+                <ul>    
+                    <label id="idioma" for="language-select">Escolha o idioma</label>
+                    <select id="languageSelector" onchange="changeLanguage()">
+                        <option value="pt-br">PT-BR (Português)</option>
+                        <option value="en">EN (Usa)</option>
+                        <option value="es">ES (Espanhol)</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+        <hr class="linha1">
+
+        <form class="form">
+            <div class="login">
+                <img src="imagens/user.png" alt="user"><br>
+                <h2>Esqueci Minha Senha</h2>
+            </div>
+
+            <div class="email">
+                <label for="email" id="email-label">Email*</label>
+                <input type="emailPlaceholder" name="email" id="emailPlaceholder" maxlength="50" placeholder="Digite seu email" required>
+            </div>
+            <div class="Enviar">
+                <input type="button" value="Enviar">
+            </div>
+        </form>
+         <!-- começo do rodapé -->  
+        <hr id="linha2">
+        <footer>
+           <div class="footer-content">
+               <div class="footer-section1">
+                   <h3 id="desenvolvido-label">Desenvolvido Por</h3>
+               </div>
+               <img src="imagens/isafepark.png" alt="Logo distribuído" class="logo">
+               <div class="footer-section2">
+                   <h3 id="links-úteis-label">Links ÚTeis</h3>
+                   <ul>
+                       <li><a href="link-para-politica-de-privacidade" id="politica-privacidade-label">Política de Privacidade</a></li>
+                   </ul>
+               </div>
+               <div class="footer-section3">
+                   <h3 id="canais-atendimento-label">Canais de Atendimento</h3>
+                   <div class="footer-section3-div0">
+                       <img src="imagens/envelope1.png" alt="">
+                       <h4>contato@poncepark.com.br</h4>
+                   </div>
+                   <div class="footer-section3-div1">
+                       <img src="imagens/telefone.png" alt="telefone">
+                       <h5>(11)94804-2366</h5>
+                   </div>
+               </div>
+           </div>
+        </footer>
+        <script src="js/mostrar-senha.js"></script>
+        <!-- fim do rodapé -->
+        <script src="js/seletor-idioma-login.js"></script>
+        <hr class="linha5">
+        <script src="js/validacao-dados.js"></script>
+        <div class="cnpj">
+        PoncePark / CNPJ:44.614.669/0001-49
+        </div>
+    </div>
+</body>
+</html>

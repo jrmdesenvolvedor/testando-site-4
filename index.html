@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="imagens/isafeparking.ico" type="image/x-icon">
+    <title>Isafeparking.PoncePark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <div class="menu">
+                <ul>    
+                    <label id="idioma" for="language-select">Escolha o idioma</label>
+                    <select id="languageSelector" onchange="changeLanguage()">
+                        <option value="pt-br">PT-BR(Português)</option>
+                        <option value="en">EN(Usa)</option>
+                        <option value="es">ES(Espanhol)</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+        <div class="ponce">
+            <a href="https://www.poncepark.com.br/"><img src="imagens/poncepark.png" alt="ponce-celular"></a>
+        </div>
+        <hr id="linha1">
+       
+        <!-- Campos de Data e Hora -->
+    
+        <form class="form">
+            <div>
+                <h2 id="title">Selecione o período de reserva</h2>
+            </div>
+            <div class="form-row-entrada">
+                <div class="form-group-entrada">
+                    <label for="data-entrada" id="data-entrada-label" required>Data Entrada</label>
+                    <input type="date" id="data-entrada" name="data-entrada" required>
+                </div>
+                <div class="form-group-hora-entrada">
+                    <label for="hora-entrada" id="hora-entrada-label">Hora Entrada</label>
+                    <select name="hora-entrada" id="hora-entrada" required>
+                            <option value="--:--">--:-- </option>
+                            <option value="00:00">00:00 </option>
+                            <option value="00:30">00:30 </option>
+                            <option value="01:00">01:00 </option>
+                            <option value="01:30">01:30 </option>
+                            <option value="02:00">02:00 </option>
+                            <option value="02:30">02:30 </option>
+                            <option value="03:00">03:00 </option>
+                            <option value="03:30">03:30 </option>
+                            <option value="04:00">04:00 </option>
+                            <option value="04:30">04:30 </option>
+                            <option value="05:00">05:00 </option>
+                            <option value="05:30">05:30 </option>
+                            <option value="06:00">06:00 </option>
+                            <option value="06:30">06:30 </option>
+                            <option value="07:00">07:00 </option>
+                            <option value="07:30">07:30 </option>
+                            <option value="08:00">08:00 </option>
+                            <option value="08:30">08:30 </option>
+                            <option value="09:00">09:00 </option>
+                            <option value="09:30">09:30 </option>
+                            <option value="10:00">10:00 </option>
+                            <option value="10:30">10:30 </option>
+                            <option value="11:00">11:00 </option>
+                            <option value="11:30">11:30 </option>
+                            <option value="12:00">12:00 </option>
+                            <option value="12:30">12:30 </option>
+                            <option value="13:00">13:00 </option>
+                            <option value="13:30">13:30 </option>
+                            <option value="14:00">14:00 </option>
+                            <option value="14:30">14:30 </option>
+                            <option value="15:00">15:00 </option>
+                            <option value="15:30">15:30 </option>
+                            <option value="16:00">16:00 </option>
+                            <option value="16:30">16:30 </option>
+                            <option value="17:00">17:00 </option>
+                            <option value="17:30">17:30 </option>
+                            <option value="18:00">18:00 </option>
+                            <option value="18:30">18:30 </option>
+                            <option value="19:00">19:00 </option>
+                            <option value="19:30">19:30 </option>
+                            <option value="20:00">20:00 </option>
+                            <option value="20:30">20:30 </option>
+                            <option value="21:00">21:00 </option>
+                            <option value="21:30">21:30 </option>
+                            <option value="22:00">22:00 </option>
+                            <option value="22:30">22:30 </option>
+                            <option value="23:00">23:00 </option>
+                            <option value="23:30">23:30 </option>
+                        
+                        <!-- Horários omitidos para brevidade -->
+                    </select>
+                </div>
+            </div>
+            <div class="form-row-saida">
+                <div class="form-group-saida">
+                    <label for="data-saida" id="data-saida-label">Data Saída</label>
+                    <input type="date" id="data-saida" name="data-saida">
+                </div>
+                <div class="form-group-hora-saida">
+                    <label for="hora-saida" id="hora-saida-label">Hora Saída</label>
+                    <select name="hora-saida" id="hora-saida">
+                            <option value="--:--">--:-- </option>
+                            <option value="00:00">00:00 </option>
+                            <option value="00:30">00:30 </option>
+                            <option value="01:00">01:00 </option>
+                            <option value="01:30">01:30 </option>
+                            <option value="02:00">02:00 </option>
+                            <option value="02:30">02:30 </option>
+                            <option value="03:00">03:00 </option>
+                            <option value="03:30">03:30 </option>
+                            <option value="04:00">04:00 </option>
+                            <option value="04:30">04:30 </option>
+                            <option value="05:00">05:00 </option>
+                            <option value="05:30">05:30 </option>
+                            <option value="06:00">06:00 </option>
+                            <option value="06:30">06:30 </option>
+                            <option value="07:00">07:00 </option>
+                            <option value="07:30">07:30 </option>
+                            <option value="08:00">08:00 </option>
+                            <option value="08:30">08:30 </option>
+                            <option value="09:00">09:00 </option>
+                            <option value="09:30">09:30 </option>
+                            <option value="10:00">10:00 </option>
+                            <option value="10:30">10:30 </option>
+                            <option value="11:00">11:00 </option>
+                            <option value="11:30">11:30 </option>
+                            <option value="12:00">12:00 </option>
+                            <option value="12:30">12:30 </option>
+                            <option value="13:00">13:00 </option>
+                            <option value="13:30">13:30 </option>
+                            <option value="14:00">14:00 </option>
+                            <option value="14:30">14:30 </option>
+                            <option value="15:00">15:00 </option>
+                            <option value="15:30">15:30 </option>
+                            <option value="16:00">16:00 </option>
+                            <option value="16:30">16:30 </option>
+                            <option value="17:00">17:00 </option>
+                            <option value="17:30">17:30 </option>
+                            <option value="18:00">18:00 </option>
+                            <option value="18:30">18:30 </option>
+                            <option value="19:00">19:00 </option>
+                            <option value="19:30">19:30 </option>
+                            <option value="20:00">20:00 </option>
+                            <option value="20:30">20:30 </option>
+                            <option value="21:00">21:00 </option>
+                            <option value="21:30">21:30 </option>
+                            <option value="22:00">22:00 </option>
+                            <option value="22:30">22:30 </option>
+                            <option value="23:00">23:00 </option>
+                            <option value="23:30">23:30 </option>
+                        <!-- Horários omitidos para brevidade -->
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Campo de Seleção de Tipo de Vaga -->
+            <div class="form-row-tipo">
+                <label id="tipo-vaga-label">Tipo de Vaga</label>
+                <div class="selected">
+                    <button type="button" id="cobertoButton"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Coberto</button>
+                    <button type="button" id="descobertoButton"><i class="fa-solid fa-car"></i>&nbsp;&nbsp;Descoberto</button>
+                </div>
+            </div>
+        </form>    
+        <div id="importante">
+            <img src="imagens/exclamacao.webp" alt="exclamacao">
+            <h4 id="importante-title">Importante</h4>
+            <span id="importante-text"><br>
+                Em virtude da alta demanda, a disponibilidade do "self park" só pode ser verificado na entrada.<br>
+                Valor para veículos de passeio com até 5 passageiros.<br>
+                Consulte disponibilidade e valor para utilitários, vans ou mais passageiros no veículo.<br>
+                Temos vagas para RAM/F-150 e similares(R$ 25,99 diária no descoberto). <br> Reservas e informações via Whatsapp (11) 98404-2366.<br>
+                Não transportamos caixas, pranchas, bikes e grandes volumes.<br>
+                O trajeto até o aeroporto leva de 10 a 15 minutos.Vans a cada 30 minutos. Exemplo: 10:00, 10:30, 11:00.<br>
+                Estadia mínima de 3 diárias.<br>
+                Identifique bem as suas bagagens. Isso facilitará a sua vida durante toda a viagem.
+            </span>
+        </div>
+        <div id="mensagemEstadiaLonga">
+            <span id="mensagem-estadia-longa">Para estadias acima de 30 dias, entre em contato conosco! só clicar no Whatsapp!</span>
+            <a href="https://api.whatsapp.com/send/?phone=5511948042366" target="_blank"><img src="imagens/what-desenho.webp" alt="zap"></a>
+        </div>
+        <form class="info-container">
+            <div>
+                <h2 id="seg-info-title">Segue suas informações</h2>
+            </div>
+            <div class="info-container-form-entrada">
+                <span id="dados-entrada-label">Dados Entrada</span><br><span id="data-entrada-info"></span>&nbsp;&nbsp;&nbsp;<span id="hora-entrada-info"></span>
+            </div>
+            <div class="info-container-form-saida">
+                <span id="dados-saida-label">Dados Saída</span><br><span id="data-saida-info"></span>&nbsp;&nbsp;&nbsp;<span id="hora-saida-info"></span>
+            </div>
+            <div class="info-container-tipo-vaga">
+                <span id="tipo-vaga-info">Tipo Vaga</span><br><span id="tipoCoberto"></span>
+                <span id="tipoDescoberto"></span>
+            </div>
+            
+            <div class="info-container-periodo">
+                <span id="periodo-label">Período</span><br><span id="periodo"></span>
+            </div>
+           
+            <div class="info-container-valor-diaria">
+                <span id="valor-diaria-label">Valor da Diária</span><br><span id="valorReserva"></span>
+            </div>
+            <div class="info-container-total">
+                <span id="total-label">Total</span><br><span id="valorTotal"></span>
+            </div>
+            <div id="mensagemEstadiaCurta">
+                <span id="mensagem-estadia-curta">A estadia mínima é de 3 dias.</span>
+            </div>
+             <div>
+            <button id="avancar-button">
+                <a href="login.html" target="_self">Avançar</a>
+            </button>
+        </div>
+        </form>
+        
+       
+        <script src="js/index-localstorage.js"></script>
+        <script src="js/resultado.js"></script>
+        
+        <hr id="linha2">
+        
+        <script src="js/seletor-idioma.js"></script>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section1">
+                    <h3 id="desenvolvido-label">Desenvolvido Por</h3>
+                </div>
+                <img src="imagens/isafepark.png" alt="Logo distribuído" class="logo">
+                <div class="footer-section2">
+                    <h3 id="links-úteis-label">Links ÚTeis</h3>
+                    <ul>
+                        <li><a href="link-para-politica-de-privacidade" id="politica-privacidade-label">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section3">
+                    <h3 id="canais-atendimento-label">Canais de Atendimento</h3>
+                    <div class="footer-section3-div0">
+                        <img src="imagens/envelope1.png" alt="">
+                        <h4>contato@poncepark.com.br</h4>
+                    </div>
+                    <div class="footer-section3-div1">
+                        <img src="imagens/telefone.png" alt="telefone">
+                        <h5>(11)94804-2366</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <hr id="linha5">
+        <div class="cnpj">
+            PoncePark / CNPJ:44.614.669/0001-49
+        </div>
+    </div> 
+</body>
+</html>
